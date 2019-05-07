@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Вера Шишова](https://up.htmlacademy.ru/htmlcss/25/user/1006507).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
