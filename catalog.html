@@ -7,13 +7,13 @@
   <body>
 
     <header class="main-header">
-      <a href="index.html"><img src="img/logo.svg" width="140" height="71" alt="Логотип сайта Седона"></a>
       <nav class="main-navigation">
+        <a class="logo-link" href="index.html"><img src="img/logo.svg" width="140" height="71" alt="Логотип сайта Седона"></a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
+          <li class="current"><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -24,37 +24,49 @@
       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h2>Amara Resort & Spa</h2>
+            <h2>
+              <a>Amara Resort & Spa</a>
+            </h2>
             <img src="img/hotel-1.jpg" alt="Гостиница 1">
-            <!-- Не знаю, возможно нужно добавить р
-            <p> -->
-            <span class="catalog-item-category">Гостиница</span>
-            <span class="catalog-item-price">От 4000 Р.</span>
-            <!-- </p> -->
-            <a class="button-details" href="hotel-1-info.html">Подробнее</a>
-            <a class="button-reserve" href="reserve.html">Забронировать</a>
-            <span class="catalog-item-rating">Рейтинг: 8,5</span>
+            <p class="short-info">
+              <span class="category">Гостиница</span>
+              <span class="price">От 4000 Р.</span>
+            </p>
+            <p class="buttons">
+              <a class="details" href="hotel-1-info.html">Подробнее</a>
+              <a class="reserve" href="reserve.html">Забронировать</a>
+            </p>
+            <span class="rating">Рейтинг: 8,5</span>
           </li>
           <li class="catalog-item">
-            <h2>Desert Quail Inn</h2>
+            <h2>
+              <a>Desert Quail Inn</a>
+            </h2>
             <img src="img/hotel-2.jpg" alt="Гостиница 2">
-            <span class="catalog-item-category">Мотель</span>
-            <span class="catalog-item-price">От 3000 Р.</span>
-            <a class="button-details" href="hotel-2-info.html">Подробнее</a>
-            <a class="button-reserve" href="reserve.html">Забронировать</a>
-            <span class="catalog-item-rating">Рейтинг: 8,9</span>
+            <p class="short-info">
+              <span class="category">Мотель</span>
+              <span class="price">От 3000 Р.</span>
+            </p>
+            <p class="buttons">
+              <a class="details" href="hotel-2-info.html">Подробнее</a>
+              <a class="reserve" href="reserve.html">Забронировать</a>
+            </p>
+            <span class="rating">Рейтинг: 8,9</span>
           </li>
           <li class="catalog-item">
-            <h2>Villas at Poco Diablo</h2>
-            <img src="img/hotel-1.jpg" alt="Гостиница 1">
-            <!-- Не знаю, возможно нужно добавить р
-            <p> -->
-            <span class="catalog-item-category">Апартаменты</span>
-            <span class="catalog-item-price">От 2000 Р.</span>
-            <!-- </p> -->
-            <a class="button-details" href="hotel-3-info.html">Подробнее</a>
-            <a class="button-reserve" href="reserve.html">Забронировать</a>
-            <span class="catalog-item-rating">Рейтинг: 9,2</span>
+            <h2>
+              <a>Villas at Poco Diablo</a>
+            </h2>
+            <img src="img/hotel-1.jpg" alt="Гостиница 3">
+            <p class="short-info">
+              <span class="category">Апартаменты</span>
+              <span class="price">От 2000 Р.</span>
+            </p>
+            <p class="buttons">
+              <a class="details" href="hotel-3-info.html">Подробнее</a>
+              <a class="reserve" href="reserve.html">Забронировать</a>
+            </p>
+            <span class="rating">Рейтинг: 9,2</span>
           </li>
         </ul>
       </section>
@@ -72,7 +84,7 @@
       </div>
       <p class="footer-copyright">
         <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/logo-html.svg">
         </a>
       </p>
