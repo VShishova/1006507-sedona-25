@@ -22,7 +22,8 @@
 
       <section class="promo">
         <img src="img/intro-welcome.svg" width="459" height="353" alt="Приветствие">
-        <h1 class="page-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="visually-hidden">Отдых в городе Седона</h1>
+        <p class="page-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </section>
       <!-- Оказывается это пока не нужно -->
       <!-- <section class="features">
@@ -73,17 +74,42 @@
         </ul>
       </section> -->
 
-      <section class="search">
-        <h2>Заинтересовались?</h2>
+      <section class="search-info">
+        <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <!-- Не знаю как делать -->
-        <!-- кнопка -->
-        <!-- форма -->
+        <button class="button-form-visible" type="button">Поиск гостиницы в Седоне</button>
+       </section>
+
+      <section class="modal-search">
+        <!-- Не знаю, можно ли окно перенести внутрь пред.секции. Не нравится разделение этих 2-х секций -->
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <form class="search-form" action="/echo" method="GET">
+          <p>
+            <label>Дата заезда
+              <input type="text" name="date-in" placeholder="24 апреля 2017">
+            </label>
+          </p>
+          <p>
+            <label>Дата выезда
+             <input type="text" name="date-out" placeholder="4 июля 2017">
+            </label>
+          </p>
+          <p>
+            <label for="adult-number">Взрослые</label>
+            <!-- Не знаю, надо ли кнопки, или видом счетчика можно управлять через свойства
+            <button class="button-less" type="button">-</button> -->
+            <input type="number" id="adult-number" name="adults" placeholder="2">
+            <label for="children-number">Дети</label>
+            <input type="number" id="children-number" name="children" placeholder="0">
+          </p>
+          <button class="button-search" type="submit">Найти</button>
+        </form>
       </section>
 
-      <!-- <section class="map">
-        <img src="img/map.jpg" width="1200" height="593" alt="Карта">
-      </section> -->
+      <section class="map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map.jpg" width="1200" height="593" alt="Карта штата">
+      </section>
 
     </main>
 
@@ -99,7 +125,7 @@
       <p class="footer-copyright">
         <span>Website by</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" aria-label="Онлайн-курс Академии по HTML и CSS">
         </a>
       </p>
     </footer>
