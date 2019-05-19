@@ -75,35 +75,39 @@
       </section> -->
 
       <section class="search-info">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <button class="button-form-visible" type="button">Поиск гостиницы в Седоне</button>
-       </section>
 
-      <section class="modal-search">
-        <!-- Не знаю, можно ли окно перенести внутрь пред.секции. Не нравится разделение этих 2-х секций -->
-        <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <form class="search-form" action="/echo" method="GET">
-          <p>
-            <label>Дата заезда
-              <input type="text" name="date-in" placeholder="24 апреля 2017">
-            </label>
-          </p>
-          <p>
-            <label>Дата выезда
-             <input type="text" name="date-out" placeholder="4 июля 2017">
-            </label>
-          </p>
-          <p>
-            <label for="adult-number">Взрослые</label>
-            <!-- Не знаю, надо ли кнопки, или видом счетчика можно управлять через свойства
-            <button class="button-less" type="button">-</button> -->
-            <input type="number" id="adult-number" name="adults" placeholder="2">
-            <label for="children-number">Дети</label>
-            <input type="number" id="children-number" name="children" placeholder="0">
-          </p>
-          <button class="button-search" type="submit">Найти</button>
-        </form>
+        <section class="modal-search">
+          <form class="search-form" action="/echo" method="GET">
+            <p class="full-width">
+              <label>Дата заезда
+                <input type="text" name="date-in" placeholder="24 апреля 2017">
+              </label>
+            </p>
+            <p class="full-width">
+              <label>Дата выезда
+              <input type="text" name="date-out" placeholder="4 июля 2017">
+              </label>
+            </p>
+            <p class="half-width">
+              <label for="adult-number">Взрослые</label>
+              <button class="button-less" type="button">-</button>
+              <input type="number" id="adult-number" name="adults" placeholder="2">
+              <button class="button-more" type="button">+</button>
+            </p>
+            <p class="half-width">
+              <label for="children-number">Дети</label>
+              <button class="button-less" type="button">-</button>
+              <input type="number" id="children-number" name="children" placeholder="0">
+              <button class="button-more" type="button">+</button>
+            </p>
+            <button class="button-search" type="submit">Найти</button>
+          </form>
+        </section>
+
       </section>
 
       <section class="map">
