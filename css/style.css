@@ -1,5 +1,5 @@
 body {
-  margin: 0 40px;
+  margin: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -10,20 +10,99 @@ body {
   background-color: #f2f2f2;
 }
 
+.page-wrap{
+  margin: 0 auto;
+  width: 1200px;
+
+  box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
+  background-color: #ffffff;
+}
+
 a {
   text-decoration: none;
 }
 
-.main-navigation{
-  background-color: #ffffff;
+.button{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: none;
 }
+
+.button-form-visible{
+  width: 568px;
+  height: 86px;
+
+  font-size: 21px;
+  line-height: 26px;
+
+  background-color: #766357;
+  box-shadow: 0 0 20px 10px rgba(0, 1, 1, 0.25);
+}
+
+.button-form-visible:hover,
+.button-form-visible:focus{
+  background-color: #604e43;
+}
+
+.button-form-visible:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.button-search{
+  width: 458px;
+  height: 58px;
+
+  font-size: 21px;
+  line-height: 26px;
+
+  background-color: #81b3d2;
+}
+
+.button-search:hover,
+.button-search:focus{
+  background-color: #669ec0;
+}
+
+.button-search:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.button-less,
+.button-more{
+  width: 38px;
+  height: 38px;
+  color: #a9a9a9;
+
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.button-less:hover,
+.button-more:hover,
+.button-less:focus,
+.button-more:focus{
+  color: #000000;
+}
+
+.button-more:active,
+.button-less:active{
+  color: #81b3d2;
+}
+
+.main-navigation{
+  line-height: 26px;
+  font-weight: bold;
+}
+
 .site-navigation{
   list-style: none;
 }
 
 .site-navigation a{
-  line-height: 26px;
-  font-weight: 700;
   color: #000000;
 }
 
@@ -37,6 +116,139 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* .current{
+.current-page a{
   color: #766357;
-} */
+}
+
+.promo{
+  text-align: center;
+}
+
+.page-title{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.search-help{
+  text-align: center;
+}
+
+.search-help p:first-of-type{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.search-help p:nth-of-type(2){
+  line-height: 24px;
+}
+
+.search-form{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.search-form input {
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.catalog-list{
+  list-style: none;
+}
+
+.hotel-name{
+  line-height: 26px;
+}
+
+.hotel-name:focus,
+.hotel-name:hover{
+  color: #81b3d2;
+}
+
+.hotel-name:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.details{
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.details:focus,
+.details:hover{
+  background-color: #669ec0;
+}
+
+.details:active{
+  opacity: 0.3;
+  background-color: #5496bd;
+}
+
+.reserve{
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.reserve:focus,
+.reserve:hover{
+  background-color: #604e43;
+}
+
+.reserve:active{
+  opacity: 0.3;
+  background-color: #503e33;
+}
+
+.rating{
+  color: #666666;
+
+  background-color: #f2f2f2;
+}
+
+.main-footer{
+  opacity: 0.9;
+}
+
+.footer-hash{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/* ссылки пока не знаю как оформлять */
+
+/* почему-то не отображается логотип) */
+.footer-copyright span{
+  line-height: 26px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

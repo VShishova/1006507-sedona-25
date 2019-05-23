@@ -9,89 +9,91 @@
   </head>
   <body>
 
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="logo-link" href="index.html"><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип сайта Седона"></a>
-        <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li class="current"><a>Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="page-wrap">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a class="logo-link" href="index.html"><img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип сайта Седона"></a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="photo.html">Фото и видео</a></li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li class="current-page"><a>Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main class="container">
+      <main class="container">
 
-      <h1 class="visually-hidden">Список гостиниц</h1>
-      <section class="catalog">
-        <ul class="catalog-list">
-          <li class="catalog-item">
-            <h2>
-              <a href="#">Amara Resort & Spa</a>
-            </h2>
-            <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Гостиница 1">
-            <p class="short-info">
-              <span class="category">Гостиница</span>
-              <span class="price">От 4000 Р.</span>
-            </p>
-            <p class="buttons">
-              <a class="details" href="hotel-1-info.html">Подробнее</a>
-              <a class="reserve" href="reserve.html">Забронировать</a>
-            </p>
-            <span class="rating">Рейтинг: 8,5</span>
-          </li>
-          <li class="catalog-item">
-            <h2>
-              <a href="#">Desert Quail Inn</a>
-            </h2>
-            <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Гостиница 2">
-            <p class="short-info">
-              <span class="category">Мотель</span>
-              <span class="price">От 3000 Р.</span>
-            </p>
-            <p class="buttons">
-              <a class="details" href="hotel-2-info.html">Подробнее</a>
-              <a class="reserve" href="reserve.html">Забронировать</a>
-            </p>
-            <span class="rating">Рейтинг: 8,9</span>
-          </li>
-          <li class="catalog-item">
-            <h2>
-              <a href="#">Villas at Poco Diablo</a>
-            </h2>
-            <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Гостиница 3">
-            <p class="short-info">
-              <span class="category">Апартаменты</span>
-              <span class="price">От 2000 Р.</span>
-            </p>
-            <p class="buttons">
-              <a class="details" href="hotel-3-info.html">Подробнее</a>
-              <a class="reserve" href="reserve.html">Забронировать</a>
-            </p>
-            <span class="rating">Рейтинг: 9,2</span>
-          </li>
-        </ul>
-      </section>
+        <h1 class="visually-hidden">Список гостиниц</h1>
+        <section class="catalog">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h2>
+                <a class="hotel-name" href="#">Amara Resort & Spa</a>
+              </h2>
+              <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Гостиница 1">
+              <p class="short-info">
+                <span class="category">Гостиница</span>
+                <span class="price">От 4000 Р.</span>
+              </p>
+              <p class="buttons">
+                <a class="details" href="hotel-1-info.html">Подробнее</a>
+                <a class="reserve" href="reserve.html">Забронировать</a>
+              </p>
+              <span class="rating">Рейтинг: 8,5</span>
+            </li>
+            <li class="catalog-item">
+              <h2>
+                <a class="hotel-name" href="#">Desert Quail Inn</a>
+              </h2>
+              <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Гостиница 2">
+              <p class="short-info">
+                <span class="category">Мотель</span>
+                <span class="price">От 3000 Р.</span>
+              </p>
+              <p class="buttons">
+                <a class="details" href="hotel-2-info.html">Подробнее</a>
+                <a class="reserve" href="reserve.html">Забронировать</a>
+              </p>
+              <span class="rating">Рейтинг: 8,9</span>
+            </li>
+            <li class="catalog-item">
+              <h2>
+                <a class="hotel-name" href="#">Villas at Poco Diablo</a>
+              </h2>
+              <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Гостиница 3">
+              <p class="short-info">
+                <span class="category">Апартаменты</span>
+                <span class="price">От 2000 Р.</span>
+              </p>
+              <p class="buttons">
+                <a class="details" href="hotel-3-info.html">Подробнее</a>
+                <a class="reserve" href="reserve.html">Забронировать</a>
+              </p>
+              <span class="rating">Рейтинг: 9,2</span>
+            </li>
+          </ul>
+        </section>
 
-    </main>
+      </main>
 
-    <footer class="main-footer">
-      <p class="footer-hash">#visitSEDONA</p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" aria-label="Онлайн-курс Академии по HTML и CSS">
-        </a>
-      </p>
-    </footer>
+      <footer class="main-footer">
+        <p class="footer-hash">#visitSEDONA</p>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <span>Website by</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" aria-label="Онлайн-курс Академии по HTML и CSS">
+          </a>
+        </p>
+      </footer>
 
+    </div>
   </body>
 </html>
