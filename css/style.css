@@ -4,13 +4,14 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  font-weight: 400;
   color: #000000;
   text-transform: uppercase;
 
   background-color: #f2f2f2;
 }
 
-.page-wrap{
+.page-wrapper{
   margin: 0 auto;
   width: 1200px;
 
@@ -22,8 +23,13 @@ a {
   text-decoration: none;
 }
 
+.logo-wrapper{
+  width: 140;
+  height: 170;
+}
+
 .button{
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
 
@@ -38,7 +44,6 @@ a {
   line-height: 26px;
 
   background-color: #766357;
-  box-shadow: 0 0 20px 10px rgba(0, 1, 1, 0.25);
 }
 
 .button-form-visible:hover,
@@ -95,7 +100,7 @@ a {
 
 .main-navigation{
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .site-navigation{
@@ -117,6 +122,7 @@ a {
 }
 
 .current-page a{
+  pointer-events: none;
   color: #766357;
 }
 
@@ -127,7 +133,7 @@ a {
 .page-title{
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .search-help{
@@ -137,7 +143,7 @@ a {
 .search-help p:first-of-type{
   font-size: 30px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .search-help p:nth-of-type(2){
@@ -147,7 +153,7 @@ a {
 .search-form{
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .search-form input {
@@ -172,6 +178,7 @@ a {
 }
 
 .hotel-name{
+  color: #000000;
   line-height: 26px;
 }
 
@@ -185,7 +192,7 @@ a {
 }
 
 .details{
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 
   background-color: #81b3d2;
@@ -197,12 +204,12 @@ a {
 }
 
 .details:active{
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
 .reserve{
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 
   background-color: #766357;
@@ -214,7 +221,7 @@ a {
 }
 
 .reserve:active{
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -226,12 +233,13 @@ a {
 
 .main-footer{
   opacity: 0.9;
+  background-color: #ffffff;
 }
 
 .footer-hash{
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer-social ul {
@@ -243,6 +251,15 @@ a {
 /* почему-то не отображается логотип) */
 .footer-copyright span{
   line-height: 26px;
+}
+
+.footer-copyright a:focus,
+.footer-copyright a:hover{
+  fill: #81b3d2;
+}
+
+.footer-copyright a:active{
+  fill: #bdbbbc;
 }
 
 .visually-hidden {
