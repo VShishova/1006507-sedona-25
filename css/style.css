@@ -11,21 +11,8 @@ body {
   background-color: #f2f2f2;
 }
 
-.page-wrapper{
-  margin: 0 auto;
-  width: 1200px;
-
-  box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
-  background-color: #ffffff;
-}
-
 a {
   text-decoration: none;
-}
-
-.logo-wrapper{
-  width: 140;
-  height: 170;
 }
 
 .button{
@@ -37,6 +24,9 @@ a {
 }
 
 .button-form-visible{
+  display: block;
+  padding: 0;
+  margin: 0 auto;
   width: 568px;
   height: 86px;
 
@@ -98,13 +88,47 @@ a {
   color: #81b3d2;
 }
 
+.page-wrapper{
+  margin: 0 auto;
+  width: 1200px;
+
+  box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
+  background-color: #ffffff;
+}
+
 .main-navigation{
+  height: 56px;
+
   line-height: 26px;
   font-weight: 700;
 }
 
+.logo-wrapper{
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140;
+  height: 71;
+}
+
 .site-navigation{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 56px;
+
   list-style: none;
+}
+
+.site-navigation li{
+  width: 239px;
+
+  text-align: center;
+}
+
+.site-navigation li:nth-last-child(2){
+  margin-left: auto;
 }
 
 .site-navigation a{
@@ -130,13 +154,34 @@ a {
   text-align: center;
 }
 
+.promo-wrapper{
+  /* Почему-то не работает */
+  /* box-sizing: border-box;
+  height: 510; */
+  padding-top: 76px;
+  padding-bottom: 80px;
+  margin-bottom: 65px;
+
+  background-image: url('../img/polygon.png'), url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 100%, 0 -56px;
+}
+
 .page-title{
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
 .search-help{
+  width: 434px;
+  margin: 0 auto;
+  margin-bottom: 52px;
+
   text-align: center;
 }
 
@@ -174,7 +219,37 @@ a {
 }
 
 .catalog-list{
+  margin: 0;
+  padding: 0;
+
+
   list-style: none;
+}
+
+.inner-page h2{
+  margin: 0;
+}
+
+.catalog-item{
+  display: flex;
+  /* padding: 30, 73, 30, 72; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 72px;
+  padding-right: 73px;
+}
+
+.hotel-photo{
+  margin-right: 30px;
+}
+
+.catalog-item-left{
+  width: 528px;
+}
+
+.catalog-item-right{
+  margin-left: auto;
+  width: 240px;
 }
 
 .hotel-name{
@@ -231,9 +306,29 @@ a {
   background-color: #f2f2f2;
 }
 
+.map{
+  height: 593px;
+}
+
 .main-footer{
+  display: flex;
+  /* Не получается сдвинуть, чтобы и прокрутка была, и место пустое не оставалось */
+  position: relative;
+  top: -120px;
+  min-height: 120px;
+
   opacity: 0.9;
   background-color: #ffffff;
+}
+
+.inner-page .main-footer{
+  position: static;
+}
+
+.main-footer *{
+  margin: 0;
+  padding: 0;
+  width: 400px;
 }
 
 .footer-hash{
@@ -242,13 +337,14 @@ a {
   font-weight: 700;
 }
 
+/* .social-button{
+  font-size: 0;
+} */
+
 .footer-social ul {
   list-style: none;
 }
 
-/* ссылки пока не знаю как оформлять */
-
-/* почему-то не отображается логотип) */
 .footer-copyright span{
   line-height: 26px;
 }
@@ -269,3 +365,15 @@ a {
   height: 1px;
   margin: -1px;
 }
+
+/* div, section, ul{
+  outline: 2px solid red;
+}
+
+header, nav, footer, main{
+  outline: 1px solid #5fe310;
+}
+
+p, h1, h2, h3, h4, span, li, img{
+  outline: 1px dashed grey;
+}  */
