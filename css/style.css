@@ -133,7 +133,7 @@ a {
 }
 
 .site-navigation li:nth-last-child(2),
-  li:last-child{
+.site-navigation li:last-child{
   text-align: right;
 }
 
@@ -163,6 +163,7 @@ a {
 }
 
 .promo-wrapper{
+  position: relative;
   box-sizing: border-box;
   height: 510px;
   padding-top: 76px;
@@ -174,12 +175,14 @@ a {
 }
 
 .promo-wrapper::after{
-  content: "xxx";
-  display: block;
-  height: 59px;
-  bottom: 0;
+  content: " ";
+  position: absolute;
   width: 100%;
-  background-image: url('../img/polygon.png');
+  height: 59px;
+  bottom: -2px;
+  left: 0;
+
+  background-image: url('../img/polygon.svg');
 }
 
 .page-title{
@@ -321,22 +324,18 @@ a {
 }
 
 .map{
+  margin-bottom: -120px;
   height: 593px;
 }
 
 .main-footer{
   display: flex;
-  /* Не получается сдвинуть, чтобы и прокрутка была, и место пустое не оставалось */
   position: relative;
-  top: -120px;
   min-height: 120px;
+  text-align: center;
+  align-items: center;
 
-  opacity: 0.9;
-  background-color: #ffffff;
-}
-
-.inner-page .main-footer{
-  position: static;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer *{
@@ -350,10 +349,6 @@ a {
   line-height: 26px;
   font-weight: 700;
 }
-
-/* .social-button{
-  font-size: 0;
-} */
 
 .footer-social ul {
   list-style: none;
@@ -379,7 +374,7 @@ a {
   height: 1px;
   margin: -1px;
 }
-
+/* 
 div, section, ul{
   outline: 2px solid red;
 }
@@ -390,4 +385,4 @@ header, nav, footer, main{
 
 p, h1, h2, h3, h4, span, li, img{
   outline: 1px dashed grey;
-}
+} */
