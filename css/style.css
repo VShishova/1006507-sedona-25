@@ -96,8 +96,14 @@ a {
   background-color: #ffffff;
 }
 
-.main-navigation{
+.main-header{
   height: 56px;
+}
+
+.main-navigation{
+  position: relative;
+  height: 100%;
+  padding: 0 73px;
 
   line-height: 26px;
   font-weight: 700;
@@ -108,12 +114,13 @@ a {
 
   left: 50%;
   transform: translateX(-50%);
-  width: 140;
-  height: 71;
+  width: 140px;
+  height: 71px;
 }
 
 .site-navigation{
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   height: 56px;
@@ -122,13 +129,12 @@ a {
 }
 
 .site-navigation li{
-  width: 239px;
-
-  text-align: center;
+  width: 25%;
 }
 
-.site-navigation li:nth-last-child(2){
-  margin-left: auto;
+.site-navigation li:nth-last-child(2),
+  li:last-child{
+  text-align: right;
 }
 
 .site-navigation a{
@@ -151,26 +157,34 @@ a {
 }
 
 .promo{
+  margin-bottom: 38px;
+
   text-align: center;
 }
 
 .promo-wrapper{
-  /* Почему-то не работает */
-  /* box-sizing: border-box;
-  height: 510; */
+  box-sizing: border-box;
+  height: 510px;
   padding-top: 76px;
   padding-bottom: 80px;
   margin-bottom: 65px;
 
-  background-image: url('../img/polygon.png'), url('../img/background.jpg');
-  background-repeat: no-repeat;
-  background-position: 0 100%, 0 -56px;
+  background-image:url('../img/background.jpg');
+  background-position: 0 -56px;
+}
+
+.promo-wrapper::after{
+  content: "xxx";
+  display: block;
+  height: 59px;
+  bottom: 0;
+  width: 100%;
+  background-image: url('../img/polygon.png');
 }
 
 .page-title{
   width: 440px;
   margin: 0 auto;
-  margin-bottom: 38px;
 
   font-size: 21px;
   line-height: 26px;
@@ -366,7 +380,7 @@ a {
   margin: -1px;
 }
 
-/* div, section, ul{
+div, section, ul{
   outline: 2px solid red;
 }
 
@@ -376,4 +390,4 @@ header, nav, footer, main{
 
 p, h1, h2, h3, h4, span, li, img{
   outline: 1px dashed grey;
-}  */
+}
