@@ -114,6 +114,8 @@ a {
 
   left: 50%;
   transform: translateX(-50%);
+  /* Уплыл кончик под фон */
+  z-index: 1;
   width: 140px;
   height: 71px;
 }
@@ -254,6 +256,12 @@ a {
   padding-bottom: 30px;
   padding-left: 72px;
   padding-right: 73px;
+
+  border-bottom: 1px solid #bdbbbc;
+}
+
+.catalog-item:first-child{
+  border-top: 1px solid #bdbbbc;
 }
 
 .hotel-photo{
