@@ -257,11 +257,11 @@ a {
   padding-left: 72px;
   padding-right: 73px;
 
-  border-bottom: 1px solid #bdbbbc;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-item:first-child{
-  border-top: 1px solid #bdbbbc;
+  border-top: 1px solid #e5e5e5;
 }
 
 .hotel-photo{
@@ -360,32 +360,41 @@ a {
 
 .footer-social {
   list-style: none;
+  font-size: 0;
 }
 
 .footer-social li{
-  display: inline;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+  background-color: #81b3d2;
+}
+
+.footer-social li:last-child{
+  margin-right: 0;
 }
 
 .social-button{
-  display: inline-block;
+  display: block;
   width: 46px;
   height: 48px;
-  margin-right: 6px;
 
-  font-size: 0;
-  background-color: #81b3d2;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
-/* .social-button:focus,
-.social-button:hover{
+.footer-social li:focus,
+.footer-social li:hover{
   background-color: #669ec0;
 }
 
-.social-button:active{
+.footer-social li:active{
   background-color: #5496bd;
-} */
+}
+
+.social-button:active{
+  opacity: 0.3;
+}
 
 .social-tw{
   background-image: url("../img/twit-icon.svg");
@@ -402,14 +411,12 @@ a {
 .footer-copyright {
   line-height: 26px;
 }
-/* .footer-copyright span{
-  line-height: 26px;
-} */
+
 .footer-copyright a{
   display: inline-block;
-  height: 41px;
   vertical-align: middle;
-
+  
+  line-height: 0;
 }
 
 .footer-copyright a:focus,
