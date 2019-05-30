@@ -47,6 +47,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-form-visible{
+  position: relative;
+
   display: block;
   padding: 0;
   margin: 0 auto;
@@ -134,13 +136,13 @@ input[type="radio"].visually-hidden {
 
 .logo-wrapper{
   position: absolute;
-
   left: 50%;
-  transform: translateX(-50%);
-  /* Уплыл кончик под фон */
   z-index: 1;
+
   width: 140px;
   height: 71px;
+
+  transform: translateX(-50%);
 }
 
 .site-navigation{
@@ -217,6 +219,15 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.modal-search{
+  /* position: absolute; */
+
+  width: 568px;
+
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
 
 .search-help{
@@ -451,13 +462,6 @@ input[type="radio"].visually-hidden {
   fill: #bdbbbc;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 /*
 div, section, ul{
   outline: 2px solid red;
