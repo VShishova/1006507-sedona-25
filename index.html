@@ -84,38 +84,37 @@
 
         <section class="search-info">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <div class="search-help">
-            <p>Заинтересовались?</p>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-          </div>
+          <p>Заинтересовались?</p>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
 
           <section class="modal-search">
-           <button class="button button-form-visible" type="button">Поиск гостиницы в Седоне</button>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-              <p class="full-width">
-                <label>Дата заезда
-                  <input type="text" name="date-in" placeholder="24 апреля 2017">
-                </label>
+            <button class="button button-form-visible" type="button">Поиск гостиницы в Седоне</button>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+              <p class="full-width-wrapper">
+                <label for="input-in">Дата заезда:</label>
+                <input class="input-date" type="text" id="input-in" name="date-in" placeholder="24 апреля 2017">
               </p>
-              <p class="full-width">
-                <label>Дата выезда
-                <input type="text" name="date-out" placeholder="4 июля 2017">
-                </label>
+              <p class="full-width-wrapper">
+                <label for="input-out">Дата выезда:</label>
+                <input class="input-date" type="text" id="input-out" name="date-out" placeholder="4 июля 2017">
               </p>
-              <p class="half-width adults">
-                <label for="adult-number">Взрослые</label>
-                <button class="button-less" type="button">-</button>
-                <input type="number" id="adult-number" name="adults" placeholder="2">
-                <button class="button-more" type="button">+</button>
-              </p>
-              <p class="half-width children">
-                <label for="children-number">Дети</label>
-                <button class="button-less" type="button">-</button>
-                <input type="number" id="children-number" name="children" placeholder="0">
-                <button class="button-more" type="button">+</button>
-              </p>
+              <div class="full-width-wrapper">
+                <p class="half-width-wrapper adults">
+                  <label for="adult-number">Взрослые:</label>
+                  <button class="button-less" type="button">-</button>
+                  <input class="input-number" type="number" id="adult-number" name="adults" placeholder="2">
+                  <button class="button-more" type="button">+</button>
+                 </p>
+                <p class="half-width-wrapper children">
+                  <label for="children-number">Дети:</label>
+                  <button class="button-less" type="button">-</button>
+                  <input class="input-number" type="number" id="children-number" name="children" placeholder="0">
+                  <button class="button-more" type="button">+</button>
+                </p>
+              </div>
               <button class="button button-search" type="submit">Найти</button>
             </form>
+          </section>
 
         </section>
 
@@ -129,9 +128,9 @@
       <footer class="main-footer">
         <p class="footer-hash">#visitSEDONA</p>
         <ul class="footer-social">
-          <li><a class="social-button social-tw" href="#">Твиттер</a></li>
-          <li><a class="social-button social-fb" href="#">Фейсбук</a></li>
-          <li><a class="social-button social-yt" href="#">Ю-туб</a></li>
+          <li><a class="social-button social-tw" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li><a class="social-button social-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button social-yt" href="#"><span class="visually-hidden">Ю-туб</span></a></li>
         </ul>
         <p class="footer-copyright">
           Website by
