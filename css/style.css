@@ -125,6 +125,29 @@ input{
   color: #81b3d2;
 }
 
+.button-calendar{
+  position: absolute;
+  right: 9px;
+  top: 8px;
+  width: 21px;
+  height: 22px;
+  padding: 0;
+
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  fill: #cacaca;
+}
+
+.button-calendar:hover,
+.button-calendar:focus{
+  fill: #000000;
+}
+
+.button-calendar:active{
+  fill: #81b3d2;
+}
+
 .page-wrapper{
   margin: 0 auto;
   width: 1200px;
@@ -206,7 +229,7 @@ input{
   height: 510px;
   padding-top: 76px;
   padding-bottom: 80px;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
 
   background-image:url('../img/background.jpg');
   background-position: 0 -56px;
@@ -241,7 +264,7 @@ input{
 }
 
 .search-info > p:first-of-type{
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   font-size: 30px;
   line-height: 36px;
@@ -249,7 +272,7 @@ input{
 }
 
 .search-info > p:nth-of-type(2){
-  margin-bottom: 52px;
+  margin-bottom: 48px;
 
   line-height: 24px;
 }
@@ -297,6 +320,7 @@ input{
 }
 
 .full-width-wrapper{
+  position: relative;
   display: flex;
   justify-content: space-between;
 
@@ -351,7 +375,7 @@ input{
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 30px 73px 30px 72px;
+  padding: 28px 73px 28px 72px;
 
   border-bottom: 1px solid #e5e5e5;
 }
