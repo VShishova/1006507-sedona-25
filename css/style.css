@@ -192,6 +192,14 @@ input{
   width: 25%;
 }
 
+.site-navigation li:nth-child(2){
+  transform: translateX(-20px);
+}
+
+.site-navigation li:nth-child(3){
+  transform: translateX(20px);
+}
+
 .site-navigation li:nth-child(4n-1),
 .site-navigation li:nth-child(4n){
   text-align: right;
@@ -346,12 +354,20 @@ input{
 
 .half-width-wrapper{
   margin: 0;
-  width: 50%;
+  /* width: 50%; */
   display: flex;
 }
 
 .half-width-wrapper .button-less{
   margin-left: auto;
+}
+
+.adults{
+  width: 225px;
+}
+
+.children {
+  width: 229px;
 }
 
 .children label{
@@ -375,7 +391,7 @@ input{
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 28px 73px 28px 72px;
+  padding: 28px 73px 29px 72px;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -390,19 +406,19 @@ input{
   height: 18px;
 
   background-image: url('../img/star.svg');
-  background-repeat-y: no-repeat;
+  background-repeat: space;
 }
 
 .catalog-item:first-child::before{
-  width: 72px;
+  width: 88px;
 }
 
 .catalog-item:nth-child(2)::before{
-  width: 54px;
+  width: 64px;
 }
 
 .catalog-item:nth-child(3)::before{
-  width: 36px;
+  width: 40px;
 }
 
 .catalog-item:first-child{
@@ -445,6 +461,7 @@ input{
 .left-part{
   display: inline-block;
   width: 110px;
+  margin-right: 2px;
 }
 
 .right-part{
@@ -453,7 +470,7 @@ input{
 
 .short-info{
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 13px;
 }
 
 .buttons{
@@ -543,8 +560,6 @@ input{
 
 .footer-social li{
   margin-right: 6px;
-
-  background-color: #81b3d2;
 }
 
 .footer-social li:last-child{
@@ -552,36 +567,49 @@ input{
 }
 
 .social-button{
+  position: relative;
+
   display: block;
   width: 46px;
   height: 48px;
 
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-color: #81b3d2;
 }
 
-.footer-social li:focus,
-.footer-social li:hover{
+.social-button::after{
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 22px;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%);
+}
+
+.social-button:focus,
+.social-button:hover,
+.social-button:active{
   background-color: #669ec0;
 }
 
-.footer-social li:active{
-  background-color: #5496bd;
-}
-
-.social-button:active{
+.social-button:active::after{
   opacity: 0.3;
 }
 
-.social-tw{
+.social-tw::after{
   background-image: url("../img/twit-icon.svg");
 }
 
-.social-fb{
+.social-fb::after{
   background-image: url("../img/fb-icon.svg");
 }
 
-.social-yt{
+.social-yt::after{
   background-image: url("../img/youtube-icon.svg");
 }
 
