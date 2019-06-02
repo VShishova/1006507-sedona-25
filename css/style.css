@@ -225,7 +225,7 @@ input{
 }
 
 .promo{
-  margin-bottom: 38px;
+  margin-bottom: 26px;
 
   text-align: center;
 }
@@ -258,7 +258,6 @@ input{
 .page-title{
   width: 440px;
   margin: 0 auto;
-  margin-bottom: 30px;
 
   font-size: 21px;
   line-height: 26px;
@@ -266,12 +265,12 @@ input{
 }
 
 .features{
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 
 .features-description{
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   width: 500px;
 
   text-align: center;
@@ -299,11 +298,6 @@ input{
   margin: 0;
 }
 
-.services-list{
-  padding: 0;
-  list-style: none;
-}
-
 .two-blocks-item-wrapper{
   display: flex;
   flex-direction: column;
@@ -313,29 +307,90 @@ input{
   display: flex;
 }
 
+.features-item:nth-child(2){
+  flex-direction: row-reverse;
+}
+
 .item-info-wrapper{
+  padding-top: 48px;
+  padding-bottom: 40px;
+  padding-right: 48px;
+  padding-left: 48px;
   box-sizing: border-box;
-  padding: 49px 48px 41px 48px;
   width: 400px;
   min-height: 256px;
 
   text-align: center;
 }
 
+.item-info-wrapper h3{
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 160px;
+}
+
+.item-info-wrapper p:nth-of-type(1){
+  margin-bottom: 20px;
+}
+
+.picture-wrapper{
+  width: 800px;
+  height: 256px;
+}
+
 .services-list{
   display: flex;
+  padding: 0;
+
+  list-style: none;
 }
 
 .services-item{
+  position:relative;
+
   box-sizing: border-box;
   width: 400px;
   min-height: 330px;
 
+  padding-top: 164px;
+  padding-left: 47px;
+  padding-right: 47px;
+
   text-align: center;
+}
+
+.services-item::before{
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 58px;
+  width: 75px;
+  height: 76px;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  transform: translateX(-50%);
+}
+
+.house::before{
+  background-image: url('../img/house.svg');
+}
+
+.food::before{
+  background-image: url('../img/food.svg');
+}
+
+.gift::before{
+  background-image: url('../img/gift.svg');
 }
 
 .services-item h4{
   margin: 0;
+  margin-bottom: 22px;
+
+  font-size: 21px;
 }
 
 .blue{
@@ -344,8 +399,12 @@ input{
 }
 
 .gray{
-
   background-color: #eeeeee;
+}
+
+.gray p{
+  margin: 0 auto;
+  width: 259px;
 }
 
 .search-info > p{
@@ -676,8 +735,7 @@ input{
 }
 
 .social-button:focus,
-.social-button:hover,
-.social-button:active{
+.social-button:hover{
   background-color: #669ec0;
 }
 
