@@ -35,7 +35,8 @@ input{
   outline: none;
 }
 
-.visually-hidden:not(:focus):not(:active){
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden{
   position: absolute;
 
   width: 1px;
@@ -405,6 +406,10 @@ input{
 
 .gray p{
   margin: 0 auto;
+  width: 261px;
+}
+
+.narrow p{
   width: 259px;
 }
 

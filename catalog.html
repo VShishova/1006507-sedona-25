@@ -27,6 +27,61 @@
       <main class="container">
 
         <h1 class="visually-hidden">Список гостиниц</h1>
+
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр гостиниц</h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li>
+                  <input class="input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+                  <label for="filter-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input class="input-checkbox" type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li>
+                  <input class="input-checkbox" type="checkbox" name="wifi" id="filter-wifi">
+                  <label for="filter-wifi">Wi-fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <ul>
+                <li>
+                  <input class="input-checkbox" type="checkbox" name="hotel" id="filter-hotel">
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input class="input-checkbox" type="checkbox" name="motel" id="filter-motel">
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li>
+                  <input class="input-checkbox" type="checkbox" name="aparts" id="filter-aparts">
+                  <label for="filter-aparts">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <p>Стоимость в сутки (Р):</p>
+            <label class="min-price">от
+              <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до
+              <input type="text" name="max-price" value="3000"></label>
+            <button type="submit">Показать</button>
+          </form>
+
+          <p>Найдено:<span class="search-result">3</span></p>
+          <p>Сортировка:</p>
+          <ul>
+            <li><a>По цене</a></li>
+            <li><a href="">По типу</a></li>
+            <li><a href="">По рейтингу</a></li>
+          </ul>
+        </section>
+
         <section class="catalog">
           <ul class="catalog-list">
             <li class="catalog-item stars-4">
