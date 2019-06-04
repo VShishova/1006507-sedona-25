@@ -355,6 +355,7 @@ input{
   padding-top: 164px;
   padding-left: 47px;
   padding-right: 47px;
+  padding-bottom: 30px;
 
   text-align: center;
 }
@@ -552,15 +553,15 @@ input{
   background-repeat: space;
 }
 
-.catalog-item:first-child::before{
+.catalog-item.stars-4::before{
   width: 88px;
 }
 
-.catalog-item:nth-child(2)::before{
+.catalog-item.stars-3::before{
   width: 64px;
 }
 
-.catalog-item:nth-child(3)::before{
+.catalog-item.stars-2::before{
   width: 40px;
 }
 
@@ -578,6 +579,8 @@ input{
 .hotel-photo{
   width: 135px;
   height: 90px;
+  align-self: flex-start;
+
   margin-right: 30px;
 }
 
