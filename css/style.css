@@ -552,20 +552,20 @@ input[type="checkbox"].visually-hidden{
 .filter{
   display: flex;
 
-  padding-right: 73px;
+  padding-right: 72px;
   padding-left: 72px;
-  padding-top: 31px;
+  padding-top: 28px;
   padding-bottom: 31px;
 
   color: #ffffff;
 
   background-image: url('../img/filter-background.jpg');
   background-repeat: no-repeat;
-  background-position: 0 -320px;
+  background-position: 0 -295px;
 }
 
 .filter fieldset{
-  width: 235px;
+  width: 230px;
   margin: 0;
   padding: 0;
   padding-right: 25px;
@@ -574,7 +574,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .filter legend{
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   font-size: 16px;
   font-weight: 700;
@@ -588,7 +588,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .filter-option{
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding-left: 42px;
 }
 
@@ -649,7 +649,7 @@ input[type="checkbox"].visually-hidden{
 .price-controls{
   position: relative;
 
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
 
@@ -672,7 +672,7 @@ input[type="checkbox"].visually-hidden{
 
 .price-controls label {
   display: inline-block;
-  width: 90px;
+  width: 91px;
   padding-left: 65px;
 
   font-size: 14px;
@@ -739,6 +739,7 @@ input[type="checkbox"].visually-hidden{
 
 .sorting-wrapper{
   display: flex;
+  align-items: center;
 
   padding-right: 73px;
   padding-left: 72px;
@@ -751,18 +752,11 @@ input[type="checkbox"].visually-hidden{
   border-bottom: 1px solid #e5e5e5;
 }
 
-.sorting-wrapper ul{
-  display: flex;
-
+.sorting-wrapper p{
   margin: 0;
-  padding: 0;
-  margin-left: 40px;
-
-  list-style: none;
 }
 
-.search-results{
-  margin: 0;
+.sorting-wrapper .search-results{
   margin-right: 48px;
 
   font-size: 21px;
@@ -774,12 +768,63 @@ input[type="checkbox"].visually-hidden{
   margin-left: 5px;
 }
 
+.sorting-list{
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  margin-left: 40px;
+
+  list-style: none;
+}
+
+.sorting-list li{
+  margin-right: 33px;
+}
+
+.sorting-list a{
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-item-current a{
+  pointer-events: none;
+
+  color: #81b3d2;
+  border: none;
+}
+
+.sorting-list a:focus,
+.sorting-list a:hover{
+  color: #81b3d2;
+}
+
+.sorting-list a:active{
+  color: #000000;
+  border: none;
+}
+
 .sorting-controls{
   margin-left: auto;
 }
 
 .sorting-controls a{
   margin-left: 10px;
+  fill: #cacaca;
+}
+
+.sorting-controls .active-sorting-order{
+  pointer-events: none;
+  fill: #81b3d2;
+}
+
+.sorting-controls a:hover,
+.sorting-controls a:focus{
+  fill: #000000;
+}
+
+.sorting-controls a:active{
+  fill: #81b3d2;
 }
 
 .catalog-list{
@@ -1038,16 +1083,3 @@ input[type="checkbox"].visually-hidden{
 .footer-copyright a:active{
   fill: #bdbbbc;
 }
-
-/*
-div, section, ul{
-  outline: 2px solid red;
-}
-
-header, nav, footer, main{
-  outline: 1px solid #5fe310;
-}
-
-p, h1, h2, h3, h4, span, li, img{
-  outline: 1px dashed grey;
-} */
