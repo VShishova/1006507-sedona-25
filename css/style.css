@@ -300,7 +300,7 @@ input[type="checkbox"].visually-hidden{
 
 .features-list{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
