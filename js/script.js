@@ -15,8 +15,13 @@ buttonVisible.addEventListener("click", function (evt) {
 });
 
 searchForm.addEventListener("submit", function (evt) {
-  if (!dateIn.value || !dateOut.value || !adults.value) {
+  if (searchForm.classList.contains("form-mistake")) {
+    searchForm.classList.remove("form-mistake");
+    console.log("Удалили");
+  };
+  if (!dateIn.value || !dateOut.value || !adults.value || adults.value==0) {
     evt.preventDefault();
     searchForm.classList.add("form-mistake");
+    console.log("Добавили");
   }
 });
