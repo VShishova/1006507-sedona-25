@@ -17,11 +17,10 @@ buttonVisible.addEventListener("click", function (evt) {
 searchForm.addEventListener("submit", function (evt) {
   if (searchForm.classList.contains("form-mistake")) {
     searchForm.classList.remove("form-mistake");
-    console.log("Удалили");
+    getComputedStyle(searchForm).color;
   };
   if (!dateIn.value || !dateOut.value || !adults.value || adults.value==0) {
     evt.preventDefault();
     searchForm.classList.add("form-mistake");
-    console.log("Добавили");
   }
 });

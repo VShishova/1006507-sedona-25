@@ -12,7 +12,6 @@ body {
 }
 
 a {
-  outline: none;
   text-decoration: none;
 }
 
@@ -29,10 +28,6 @@ input::-webkit-inner-spin-button {
 
 input[type='number'] {
     -moz-appearance: textfield;
-}
-
-input{
-  outline: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -58,6 +53,7 @@ input[type="checkbox"].visually-hidden{
   color: #ffffff;
 
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -260,22 +256,23 @@ input[type="checkbox"].visually-hidden{
   text-align: right;
 }
 
-.site-navigation a{
+.site-navigation-href{
   color: #000000;
 }
 
-.current-page a{
+.current-page{
   pointer-events: none;
+  cursor: default;
   color: #766357;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus
+.site-navigation-href:not(.current-page):hover,
+.site-navigation-href:not(.current-page):focus
 {
   color: #81b3d2;
 }
 
-.site-navigation a:active{
+.site-navigation-href:not(.current-page):active{
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -761,8 +758,6 @@ input:-ms-input-placeholder {
   display: inline-block;
   box-sizing: border-box;
   width: 156px;
-  /* width: 91px; */
-  /* padding-left: 65px; */
 
   font-size: 14px;
   line-height: 34px;
@@ -772,6 +767,7 @@ input:-ms-input-placeholder {
 
 .price-controls input {
   width: 50px;
+  height: 25px;
   margin: 0;
 
   color: inherit;
@@ -881,24 +877,25 @@ input:-ms-input-placeholder {
   margin-right: 33px;
 }
 
-.sorting-list a{
+.sorting-item-href{
   color: #cacaca;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-item-current a{
+.sorting-current{
   pointer-events: none;
+  cursor: default;
 
   color: #81b3d2;
   border: none;
 }
 
-.sorting-list a:focus,
-.sorting-list a:hover{
+.sorting-item-href:not(.sorting-current):focus,
+.sorting-item-href:not(.sorting-current):hover{
   color: #81b3d2;
 }
 
-.sorting-list a:active{
+.sorting-item-href:not(.sorting-current):active{
   color: #000000;
   border: none;
 }
