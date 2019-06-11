@@ -727,6 +727,10 @@ input[type="checkbox"].visually-hidden{
   color: #6a6a6a;
 }
 
+.input-checkbox:focus + label{
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .filter-range{
   margin-left: auto;
 }
