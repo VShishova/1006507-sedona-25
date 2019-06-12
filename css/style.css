@@ -701,7 +701,7 @@ input[type="checkbox"].visually-hidden{
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1px;
 
   width: 27px;
   height: 23px;
@@ -728,7 +728,7 @@ input[type="checkbox"].visually-hidden{
 }
 
 .input-checkbox:focus + label{
-  outline: -webkit-focus-ring-color auto 5px;
+  outline: #ffffff 1px solid;
 }
 
 .filter-range{
