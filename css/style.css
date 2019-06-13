@@ -579,11 +579,13 @@ input[type="checkbox"].visually-hidden{
 }
 
 .full-width-wrapper label{
+  height: 28px;
   margin: auto 0;
 }
 
 .input-date{
   padding-left: 12px;
+  margin-left: auto;    /*для IE*/
   box-sizing: border-box;
   width: 346px;
   height: 38px;
@@ -1203,11 +1205,11 @@ input[type="checkbox"].visually-hidden{
   line-height: 0;
 }
 
-.footer-copyright a:focus,
-.footer-copyright a:hover{
+.footer-logo:focus,
+.footer-logo:hover{
   fill: #81b3d2;
 }
 
-.footer-copyright a:active{
+.footer-logo:active{
   fill: #bdbbbc;
 }
