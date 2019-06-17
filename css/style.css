@@ -1312,7 +1312,7 @@ input[type="checkbox"].visually-hidden{
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-          
+
   line-height: 26px;
 }
 
@@ -1322,11 +1322,11 @@ input[type="checkbox"].visually-hidden{
   line-height: 0;
 }
 
-.footer-logo:focus,
-.footer-logo:hover{
+.footer-copyright a:focus,
+.footer-copyright a:hover{
   fill: #81b3d2;
 }
 
-.footer-logo:active{
+.footer-copyright a:active{
   fill: #bdbbbc;
 }
